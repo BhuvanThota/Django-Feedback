@@ -1,0 +1,25 @@
+{% extends 'reviews/base.html' %}
+
+{% block title %}
+Thank you
+{% endblock %}
+
+
+{% block content %}
+<h1>Thank you for your review.</h1>
+    <hr>
+    <h4>Send another review. <a href="/">Click Here.</a></h4>
+
+    <hr>
+    <h4>Most Recent Reviews: </h4>
+    {% for review in reviews %}
+        <div class="review-control">
+            <p>Username: {{ review.username }}</p>
+            <p>Feedback: {{ review.review_text }}</p>
+            <p>Rating: {{ review.rating }}</p>
+        </div>
+    {% endfor %}
+    <hr>
+{% endblock %}
+
+
