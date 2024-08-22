@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'reviews',
+    'profiles',
 ]
 
 MIDDLEWARE = [
@@ -121,9 +122,15 @@ USE_TZ = True
 STATIC_URL = 'static/'
 STATIC_DIR = [
     BASE_DIR/'static',
+    BASE_DIR/'uploads',
 ]
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+MEDIA_ROOT = BASE_DIR / "uploads"
+
+MEDIA_URL =  "/media/"

@@ -1,0 +1,20 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profiles</title>
+</head>
+<body>
+    <ul>
+        {% for profile in profiles %}
+            <li>
+                <img src=" {{ profile.image.url }} "  max-width="500px" height="500px">
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
+
+<!-- B:\03_Demo_Projects\07_Django_Projects\12_Feedback\feedback\uploads\images\cute-robot-cartoon-1693394430KKj.jpg -->
